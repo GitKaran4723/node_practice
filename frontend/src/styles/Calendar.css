@@ -1,0 +1,71 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  overflow-x: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.calendar-days {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  padding: 5px 0;
+  scroll-behavior: smooth;
+  gap: 5px; /* Add spacing between days */
+}
+
+.calendar-day {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* Rounded day boxes */
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.calendar-day.selected {
+  background-color: #007bff;
+  color: white !important;
+  border-color: #007bff;
+}
+
+.calendar-day:hover:not([disabled]) {
+  background-color: #045cba;
+  color: white !important;
+  border-color: #045cba;
+}
+
+.calendar-day[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+  background-color: #f0f0f0; /* Match background to disabled days */
+  pointer-events: none; /* Prevent any hover or click events */
+}
+
+@media (max-width: 768px) {
+  .calendar-month {
+    max-width: 100%; /* Allow the calendar month to use full width on smaller screens */
+  }
+
+  .calendar-days {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,253 @@
+/* NewsFeed.css */
+
+.news-item {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button {
+  color : rgba(135, 130, 130, 0.959);
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.news-content {
+  margin-top: 10px;
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.summary, .fullNews {
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.read-more-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-item {
+    padding: 8px;
+  }
+
+  .news-header h3 {
+    font-size: 1.2em;
+  }
+
+  .toggle-button {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .news-item {
+    padding: 15px;
+  }
+
+  .news-header h3 {
+    font-size: 1.5em;
+  }
+
+  .toggle-button {
+    font-size: 1.2em;
+  }
+}
+/* NewsFeed.css */
+.read-loud-button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it an inline-block element */
+  font-size: 16px; /* Set font size */
+  margin: 10px 0; /* Margin on top and bottom */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.read-loud-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.read-loud-button:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+}
+
+.read-loud-button:disabled {
+  background-color: #9e9e9e; /* Gray background for disabled state */
+  cursor: not-allowed; /* Show not-allowed cursor */
+}
+/* NewsFeed.css */
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-news-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between title and button */
+  margin-bottom: 10px; /* Margin below the title */
+}
+
+.fullNews {
+  margin: 0; /* Remove margin for the title */
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.tag {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff; /* Text color */
+}
+
+.tag-current-events {
+  background-color: #16a085; /* Current Events color */
+}
+
+.tag-history {
+  background-color: #3498db; /* History color */
+}
+
+.tag-geography {
+  background-color: #27ae60; /* Geography color */
+}
+
+.tag-polity {
+  background-color: #e74c3c; /* Polity color */
+}
+
+.tag-economics {
+  background-color: #f1c40f; /* Economics color */
+}
+
+.tag-environment {
+  background-color: #2ecc71; /* Environment color */
+}
+
+.tag-science {
+  background-color: #2ecc71; /* Science color */
+}
+
+.tag-comprehension {
+  background-color: #9b59b6; /* Comprehension color */
+}
+
+.tag-interpersonal {
+  background-color: #34495e; /* Interpersonal color */
+}
+
+.tag-reasoning {
+  background-color: #e67e22; /* Reasoning color */
+}
+
+.tag-decision-making {
+  background-color: #1abc9c; /* Decision Making color */
+}
+
+.tag-mental-ability {
+  background-color: #2980b9; /* Mental Ability color */
+}
+
+.tag-numeracy {
+  background-color: #8e44ad; /* Numeracy color */
+}
+
+.tag-data-interpretation {
+  background-color: #c0392b; /* Data Interpretation color */
+}
+
+.tag-culture {
+  background-color: #d35400; /* Culture color */
+}
+
+.tag-governance {
+  background-color: #16a085; /* Governance color */
+}
+
+.tag-constitution {
+  background-color: #2980b9; /* Constitution color */
+}
+
+.tag-justice {
+  background-color: #d35400; /* Justice color */
+}
+
+.tag-international-relations {
+  background-color: #9b59b6; /* International Relations color */
+}
+
+.tag-technology {
+  background-color: #f39c12; /* Technology color */
+}
+
+.tag-development {
+  background-color: #e67e22; /* Development color */
+}
+
+.tag-security {
+  background-color: #c0392b; /* Security color */
+}
+
+.tag-disaster-management {
+  background-color: #e74c3c; /* Disaster Management color */
+}
+
+.tag-ethics {
+  background-color: #34495e; /* Ethics color */
+}
+
+.tag-integrity {
+  background-color: #27ae60; /* Integrity color */
+}
+
+.tag-aptitude {
+  background-color: #f1c40f; /* Aptitude color */
+}
+
+.tag-sociology {
+  background-color: #3498db; /* Sociology color */
+}
